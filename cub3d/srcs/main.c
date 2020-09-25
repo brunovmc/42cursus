@@ -37,12 +37,12 @@ void	circle(void *mlx, void *window, int x, int y, int raio)
 	int	new_y;
 
 	ang = 0.0;
-
+	addang = 0.01;
 	while (ang < 2 * PI)
 	{
 		new_x = x + (raio * cos(ang));
 		new_y = y + (raio * sin(ang));
-		mlx_pixel_put(mlx, window, x + new_x, y + new_y, 0660000);
+		mlx_pixel_put(mlx, window,x + new_x,y +  new_y, 0660000);
 		ang += addang;
 	}
 }
