@@ -5,14 +5,14 @@
 
 ******
 
-## [libft](https://github.com/brunovmc/42cursus/tree/master/libft)
+## 1. [libft](https://github.com/brunovmc/42cursus/tree/master/libft)
 
 Projeto inicial.
 Uma biblioteca em C que recria uma serie de funcoes basicas.
  
 ******
 
-## [get_next_line](https://github.com/brunovmc/42cursus/tree/master/get_next_line)
+## 2. [get_next_line](https://github.com/brunovmc/42cursus/tree/master/get_next_line)
 
 ```c
 int	get_next_line(int fd, char **line);
@@ -30,7 +30,7 @@ a função deve retornar:
 
 ******
  
-## [ft_printf](https://github.com/brunovmc/42cursus/tree/master/ft_printf)
+## 3. [ft_printf](https://github.com/brunovmc/42cursus/tree/master/ft_printf)
 
 ```c
 int	ft_printf(char *str, ...);
@@ -40,11 +40,11 @@ Recriar a funcao printf suas flags e conversoes (algumas convesoes nao inclusas)
 
 ******
 
-## [ft_server](https://github.com/brunovmc/42cursus/tree/master/ft_server)
+## 4. [ft_server](https://github.com/brunovmc/42cursus/tree/master/ft_server)
 
 ******
 
-## [cub3d](https://github.com//brunovmc/42cursus/tree/master/cub3d)
+## 5. [cub3d](https://github.com//brunovmc/42cursus/tree/master/cub3d)
 
 ******
 
