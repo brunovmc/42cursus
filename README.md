@@ -1,12 +1,15 @@
 # 42 Cursus
 
 
-## Indice de projetos:
+## Index:
 
 ******
 
 ## [libft](https://github.com/brunovmc/42cursus/tree/master/libft)
 
+Projeto inicial.
+Uma biblioteca em C que recria uma serie de funcoes basicas.
+ 
 ******
 
 ## [get_next_line](https://github.com/brunovmc/42cursus/tree/master/get_next_line)
@@ -25,15 +28,17 @@ a função deve retornar:
 - (0) 	- se chegar no fim do arquivo (\0)
 - (-1)	- se houver um erro 
 
-*****
+******
  
 ## [ft_printf](https://github.com/brunovmc/42cursus/tree/master/ft_printf)
 
-*****
+Recriar a funcao printf suas flags e conversoes (algumas convesoes nao inclusas)
+
+******
 
 ## [ft_server](https://github.com/brunovmc/42cursus/tree/master/ft_server)
 
-*****
+******
 
 ## [cub3d](https://github.com//brunovmc/42cursus/tree/master/cub3d)
 
