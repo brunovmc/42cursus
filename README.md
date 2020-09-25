@@ -32,6 +32,10 @@ a função deve retornar:
  
 ## [ft_printf](https://github.com/brunovmc/42cursus/tree/master/ft_printf)
 
+```c
+int	ft_printf(char *str, ...);
+```
+
 Recriar a funcao printf suas flags e conversoes (algumas convesoes nao inclusas)
 
 ******
