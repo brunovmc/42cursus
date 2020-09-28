@@ -3,7 +3,9 @@ SRCS_DIR = 	srcs
 OBJS_DIR =	.objs
 MLX_DIR = 	minilibx-linux
 MLX = 		$(MLX_DIR)/libmlx.a
-SRCS = 		$(SRCS_DIR)/main.c
+SRCS = 		$(SRCS_DIR)/main.c \
+				$(SRCS_DIR)/get_next_line.c \
+				$(SRCS_DIR)/get_next_line_utils.c
 
 OBJS = 		$(patsubst $(SRCS_DIR)%.c, $(OBJS_DIR)%.o, $(SRCS))
 
@@ -25,7 +27,6 @@ $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c
 
 $(MLX):
 		make -C $(MLX_DIR)
-
 clean:
 		make clean -C $(MLX_DIR)
 		$(RM) $(OBJS_DIR)

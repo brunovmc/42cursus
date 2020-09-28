@@ -49,9 +49,8 @@ void	circle(void *mlx, void *window, int x, int y, int raio)
 
 int	main(void)
 {
-	void *mlx;
-	void *window;
-	
+	void 	*mlx;
+	void 	*window;
 	
 	mlx = mlx_init();
 	window = mlx_new_window(mlx, NUM_COLS, NUM_ROWS, "Janela Janelinha!");
@@ -59,7 +58,7 @@ int	main(void)
 	mlx_pixel_put(mlx, window, 300, 300, 0707070);
 	line(mlx, window, 30, 30, 10000);
 	square(mlx, window, 20, 20, 20);
-	circle(mlx, window, 50, 50, 50);
+	circle(mlx, window, 50, 50, 50);	
 	mlx_loop(mlx);
 
 	return (0);
