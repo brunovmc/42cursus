@@ -51,14 +51,28 @@ int	main(void)
 {
 	void 	*mlx;
 	void 	*window;
-	
+	int 	fd;
+	char 	*line;
+	int	rt;
+
 	mlx = mlx_init();
 	window = mlx_new_window(mlx, NUM_COLS, NUM_ROWS, "Janela Janelinha!");
 	mlx_string_put(mlx, window, 20,  20, 0500000, "teste");
-	mlx_pixel_put(mlx, window, 300, 300, 0707070);
-	line(mlx, window, 30, 30, 10000);
-	square(mlx, window, 20, 20, 20);
-	circle(mlx, window, 50, 50, 50);	
+	//mlx_pixel_put(mlx, window, 300, 300, 0707070);
+	//line(mlx, indow, 30, 30, 10000);
+	//square(mlx, window, 20, 20, 20);
+	//circle(mlx, window, 50, 50, 50);
+	fd = open("../map/map0.cub", O_RDONLY);
+	rt = get_next_line(fd, &line);
+	while (line)
+	{
+		printf("%s\n", line);
+		free(line);
+		if (rt <= 0 )
+			break;
+		rt = get_next_line(fd, &line);
+	}
+	close(fd);	
 	mlx_loop(mlx);
 
 	return (0);
