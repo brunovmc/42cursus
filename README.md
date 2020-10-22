@@ -77,7 +77,52 @@ PhpMyAdmin
 
 Wordpress
 
+### Comandos do Docker
+
+para listar containers
+
+```
+sudo docker ps
+```
+
+para criar o container e imagem
+
+```
+sudo docker build -t exemplo .
+```   
+
+para rodar o container pela porta 80
+
+```
+sudo docker run -it -p 80:80 -p 443:443 exemplo
+```    
+
+para apagar todas as imagens e containers
+
+```
+sudo docker system prune -a
+```   
+
 ******
+
+### Comandos do mariadb
+
+cria banco de dados
+
+```
+mysql db_name
+```
+
+
+### Links
+
+- https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-debian-10
+- https://www.docker.com/101-tutorial
+- https://docs.docker.com/get-started/overview/
+- https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-docker/
+- https://www.phpmyadmin.net/
+
+
 
 ## 5. [cub3d](https://github.com//brunovmc/42cursus/tree/master/cub3d)
 
